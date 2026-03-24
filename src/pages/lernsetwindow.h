@@ -2,13 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <memory>
 
 class QPushButton;
 class QVBoxLayout;
 class QWidget;
-
-class lernsetwindow;
 
 class MainWindow : public QMainWindow
 {
@@ -18,14 +15,10 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private slots:
-    void onButtonClicked();
-
 private:
     QWidget *m_centralWidget;
     QVBoxLayout *m_layout;
     QPushButton *m_button;
-    std::unique_ptr<lernsetwindow> m_lernsetwindow;  
 };
 
 #endif // MAINWINDOW_H
