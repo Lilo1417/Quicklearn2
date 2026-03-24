@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "quicklearn_autogen/timestamp" "custom" "quicklearn_autogen/deps"
   "/home/lilo/Documents/Programming/Qt/Quicklearn2/src/main.cpp" "CMakeFiles/quicklearn.dir/main.cpp.o" "gcc" "CMakeFiles/quicklearn.dir/main.cpp.o.d"
+  "/home/lilo/Documents/Programming/Qt/Quicklearn2/src/pages/mainwindow.cpp" "CMakeFiles/quicklearn.dir/pages/mainwindow.cpp.o" "gcc" "CMakeFiles/quicklearn.dir/pages/mainwindow.cpp.o.d"
   "/home/lilo/Documents/Programming/Qt/Quicklearn2/build/quicklearn_autogen/mocs_compilation.cpp" "CMakeFiles/quicklearn.dir/quicklearn_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/quicklearn.dir/quicklearn_autogen/mocs_compilation.cpp.o.d"
   "" "quicklearn" "gcc" "CMakeFiles/quicklearn.dir/link.d"
   )

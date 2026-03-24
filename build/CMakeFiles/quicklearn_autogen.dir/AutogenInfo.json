@@ -441,7 +441,15 @@
 	"CROSS_CONFIG" : false,
 	"DEP_FILE" : "/home/lilo/Documents/Programming/Qt/Quicklearn2/build/quicklearn_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "quicklearn_autogen/timestamp",
-	"HEADERS" : [],
+	"HEADERS" : 
+	[
+		[
+			"/home/lilo/Documents/Programming/Qt/Quicklearn2/src/pages/mainwindow.h",
+			"MU",
+			"P2WXERC3RM/moc_mainwindow.cpp",
+			null
+		]
+	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/home/lilo/Documents/Programming/Qt/Quicklearn2/build/quicklearn_autogen/include",
 	"MOC_COMPILATION_FILE" : "/home/lilo/Documents/Programming/Qt/Quicklearn2/build/quicklearn_autogen/mocs_compilation.cpp",
@@ -502,6 +510,11 @@
 	[
 		[
 			"/home/lilo/Documents/Programming/Qt/Quicklearn2/src/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/lilo/Documents/Programming/Qt/Quicklearn2/src/pages/mainwindow.cpp",
 			"MU",
 			null
 		]

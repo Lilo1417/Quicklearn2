@@ -10,6 +10,8 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 add_executable(quicklearn
     main.cpp
+    pages/mainwindow.cpp
+    pages/mainwindow.h
 )
 
 target_link_libraries(quicklearn

@@ -10,5 +10,11 @@
   "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/lilo/Documents/Programming/Qt/Quicklearn2/build/quicklearn_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -std=gnu++17 -o CMakeFiles/quicklearn.dir/main.cpp.o -c /home/lilo/Documents/Programming/Qt/Quicklearn2/src/main.cpp",
   "file": "/home/lilo/Documents/Programming/Qt/Quicklearn2/src/main.cpp",
   "output": "CMakeFiles/quicklearn.dir/main.cpp.o"
+},
+{
+  "directory": "/home/lilo/Documents/Programming/Qt/Quicklearn2/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/lilo/Documents/Programming/Qt/Quicklearn2/build/quicklearn_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -std=gnu++17 -o CMakeFiles/quicklearn.dir/pages/mainwindow.cpp.o -c /home/lilo/Documents/Programming/Qt/Quicklearn2/src/pages/mainwindow.cpp",
+  "file": "/home/lilo/Documents/Programming/Qt/Quicklearn2/src/pages/mainwindow.cpp",
+  "output": "CMakeFiles/quicklearn.dir/pages/mainwindow.cpp.o"
 }
 ]

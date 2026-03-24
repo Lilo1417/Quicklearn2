@@ -179,6 +179,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quicklearn.dir/build.make CMakeFiles/quicklearn.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+pages/mainwindow.o: pages/mainwindow.cpp.o
+.PHONY : pages/mainwindow.o
+
+# target to build an object file
+pages/mainwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quicklearn.dir/build.make CMakeFiles/quicklearn.dir/pages/mainwindow.cpp.o
+.PHONY : pages/mainwindow.cpp.o
+
+pages/mainwindow.i: pages/mainwindow.cpp.i
+.PHONY : pages/mainwindow.i
+
+# target to preprocess a source file
+pages/mainwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quicklearn.dir/build.make CMakeFiles/quicklearn.dir/pages/mainwindow.cpp.i
+.PHONY : pages/mainwindow.cpp.i
+
+pages/mainwindow.s: pages/mainwindow.cpp.s
+.PHONY : pages/mainwindow.s
+
+# target to generate assembly for a file
+pages/mainwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quicklearn.dir/build.make CMakeFiles/quicklearn.dir/pages/mainwindow.cpp.s
+.PHONY : pages/mainwindow.cpp.s
+
 quicklearn_autogen/mocs_compilation.o: quicklearn_autogen/mocs_compilation.cpp.o
 .PHONY : quicklearn_autogen/mocs_compilation.o
 
@@ -217,6 +241,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... pages/mainwindow.o"
+	@echo "... pages/mainwindow.i"
+	@echo "... pages/mainwindow.s"
 	@echo "... quicklearn_autogen/mocs_compilation.o"
 	@echo "... quicklearn_autogen/mocs_compilation.i"
 	@echo "... quicklearn_autogen/mocs_compilation.s"

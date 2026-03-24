@@ -4,6 +4,7 @@ quicklearn: \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o \
   CMakeFiles/quicklearn.dir/quicklearn_autogen/mocs_compilation.cpp.o \
   CMakeFiles/quicklearn.dir/main.cpp.o \
+  CMakeFiles/quicklearn.dir/pages/mainwindow.cpp.o \
   /usr/lib64/libQt6Widgets.so.6.9.3 \
   /usr/lib64/libQt6Gui.so.6.9.3 \
   /usr/lib64/libGLX.so \
@@ -79,6 +80,8 @@ quicklearn: \
 CMakeFiles/quicklearn.dir/quicklearn_autogen/mocs_compilation.cpp.o:
 
 CMakeFiles/quicklearn.dir/main.cpp.o:
+
+CMakeFiles/quicklearn.dir/pages/mainwindow.cpp.o:
 
 /usr/lib64/libQt6Widgets.so.6.9.3:
 
