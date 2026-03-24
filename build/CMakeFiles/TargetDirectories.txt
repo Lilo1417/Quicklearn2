@@ -1,5 +1,5 @@
-/home/lilo/Documents/Programming/Quicklearn2/build/CMakeFiles/quicklearn.dir
-/home/lilo/Documents/Programming/Quicklearn2/build/CMakeFiles/edit_cache.dir
-/home/lilo/Documents/Programming/Quicklearn2/build/CMakeFiles/rebuild_cache.dir
-/home/lilo/Documents/Programming/Quicklearn2/build/CMakeFiles/quicklearn_autogen_timestamp_deps.dir
-/home/lilo/Documents/Programming/Quicklearn2/build/CMakeFiles/quicklearn_autogen.dir
+/home/lilo/Documents/Programming/Qt/Quicklearn2/build/CMakeFiles/quicklearn.dir
+/home/lilo/Documents/Programming/Qt/Quicklearn2/build/CMakeFiles/edit_cache.dir
+/home/lilo/Documents/Programming/Qt/Quicklearn2/build/CMakeFiles/rebuild_cache.dir
+/home/lilo/Documents/Programming/Qt/Quicklearn2/build/CMakeFiles/quicklearn_autogen_timestamp_deps.dir
+/home/lilo/Documents/Programming/Qt/Quicklearn2/build/CMakeFiles/quicklearn_autogen.dir

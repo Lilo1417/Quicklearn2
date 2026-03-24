@@ -86,7 +86,6 @@
 #define __FLT128_MANT_DIG__ 113
 #define __WCHAR_MIN__ (-__WCHAR_MAX__ - 1)
 #define __INT64_C(c) c ## L
-#define __SSP_STRONG__ 3
 #define __GCC_ATOMIC_POINTER_LOCK_FREE 2
 #define __ATOMIC_SEQ_CST 5
 #define __unix 1
@@ -131,7 +130,6 @@
 #define __BFLT16_DIG__ 2
 #define __GNUC__ 15
 #define __GXX_RTTI 1
-#define __pie__ 2
 #define __MMX__ 1
 #define __FLT_HAS_DENORM__ 1
 #define __SIZEOF_LONG_DOUBLE__ 16
@@ -220,7 +218,7 @@
 #define __DEC_EVAL_METHOD__ 2
 #define __FLT_MANT_DIG__ 24
 #define __LDBL_DECIMAL_DIG__ 21
-#define __VERSION__ "15.2.1 20260209"
+#define __VERSION__ "15.2.1 20260123 (Red Hat 15.2.1-7)"
 #define __UINT64_C(c) c ## UL
 #define __cpp_unicode_characters 201411L
 #define __DEC64X_MIN__ 1E-6143D64x
@@ -265,6 +263,7 @@
 #define __INT_LEAST16_TYPE__ short int
 #define __LDBL_EPSILON__ 1.08420217248550443400745280086994171e-19L
 #define __UINTMAX_C(c) c ## UL
+#define __GNUC_RH_RELEASE__ 7
 #define __FLT16_DIG__ 3
 #define __k8 1
 #define __FLT32X_MIN__ 2.22507385850720138309023271733240406e-308F32x
@@ -345,7 +344,6 @@
 #define __INTPTR_TYPE__ long int
 #define __UINT16_TYPE__ short unsigned int
 #define __WCHAR_TYPE__ int
-#define __pic__ 2
 #define __UINTPTR_MAX__ 0xffffffffffffffffUL
 #define __INT_FAST64_WIDTH__ 64
 #define __INT_FAST64_MAX__ 0x7fffffffffffffffL
@@ -417,14 +415,12 @@
 #define __FLT32_DIG__ 6
 #define __UINT64_TYPE__ long unsigned int
 #define __UINT32_C(c) c ## U
-#define ARCHITECTURE_ID "x86_64"
 #define __cpp_alias_templates 200704L
 #define __FLT_DENORM_MIN__ 1.40129846432481707092372958328991613e-45F
 #define __FLT128_IS_IEC_60559__ 1
 #define __INT8_MAX__ 0x7f
 #define __LONG_WIDTH__ 64
 #define __DBL_MIN__ double(2.22507385850720138309023271733240406e-308L)
-#define __PIC__ 2
 #define __INT32_MAX__ 0x7fffffff
 #define __UINT_FAST32_TYPE__ long unsigned int
 #define __FLT16_MANT_DIG__ 11
@@ -447,7 +443,6 @@
 #define __GNUC_MINOR__ 2
 #define __GLIBCXX_TYPE_INT_N_0 __int128
 #define __UINTMAX_MAX__ 0xffffffffffffffffUL
-#define __PIE__ 2
 #define __FLT32X_DENORM_MIN__ 4.94065645841246544176568792868221372e-324F32x
 #define __cpp_template_template_args 201611L
 #define __DBL_MAX_10_EXP__ 308
