@@ -8,7 +8,7 @@ class QPushButton;
 class QVBoxLayout;
 class QWidget;
 
-class lernsetwindow;
+class LernsetWindow;
 
 class MainWindow : public QMainWindow
 {
@@ -25,7 +25,7 @@ private:
     QWidget *m_centralWidget;
     QVBoxLayout *m_layout;
     QPushButton *m_button;
-    std::unique_ptr<lernsetwindow> m_lernsetwindow;  
+    std::unique_ptr<LernsetWindow> m_lernsetwindow;  
 };
 
 #endif // MAINWINDOW_H

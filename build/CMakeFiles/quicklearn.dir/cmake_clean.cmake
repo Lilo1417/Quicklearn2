@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "quicklearn_autogen"
   "CMakeFiles/quicklearn.dir/main.cpp.o"
   "CMakeFiles/quicklearn.dir/main.cpp.o.d"
+  "CMakeFiles/quicklearn.dir/pages/lernsetwindow.cpp.o"
+  "CMakeFiles/quicklearn.dir/pages/lernsetwindow.cpp.o.d"
   "CMakeFiles/quicklearn.dir/pages/mainwindow.cpp.o"
   "CMakeFiles/quicklearn.dir/pages/mainwindow.cpp.o.d"
   "CMakeFiles/quicklearn.dir/quicklearn_autogen/mocs_compilation.cpp.o"

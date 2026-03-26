@@ -1,32 +1,55 @@
-#include "mainwindow.h"
+#include "lernsetwindow.h"
 
-#include <QWidget>
-#include <QVBoxLayout>
-#include <QPushButton>
-#include <QMessageBox>
-#include <qmessagebox.h>
-
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent),
-      m_centralWidget(new QWidget(this)),
-      m_layout(new QVBoxLayout),
-      m_button(new QPushButton("Lernset", this))
+LernsetWindow::LernsetWindow(QWidget *parent)
+    : QWidget(parent)
 {
-    // Set up central widget and layout
-    m_centralWidget->setLayout(m_layout);
-    setCentralWidget(m_centralWidget);
+    m_cardLabel = new QLabel("Click 'Flip' or use arrows", this);
+    m_cardLabel->setAlignment(Qt::AlignCenter);
+    m_cardLabel->setStyleSheet("QLabel { font-size: 24px; font-weight: bold; padding: 20px; border: 2px solid gray; border-radius: 10px; background: white; }");
 
-    // Configure window
-    setWindowTitle("LERNSET");
-    resize(800, 600);
+    m_prevButton = new QPushButton("Previous", this);
+    m_nextButton = new QPushButton("Next", this);
+    m_flipButton = new QPushButton("Flip", this);
 
-    // Add widgets to layout
-    m_layout->addWidget(m_button);
+    auto *layout = new QVBoxLayout(this);
+    layout->addWidget(m_cardLabel);
+    layout->addWidget(m_flipButton);
+    auto *navLayout = new QHBoxLayout;
+    navLayout->addWidget(m_prevButton);
+    navLayout->addStretch();
+    navLayout->addWidget(m_nextButton);
+    layout->addLayout(navLayout);
 
-    // Example: connect button
-    connect(m_button, &QPushButton::clicked, this, []() {
-        QMessageBox::information(nullptr, "Notification", "you just clicked a lernset");
-    });
+    connect(m_prevButton, &QPushButton::clicked, this, &LernsetWindow::prevCard);
+    connect(m_nextButton, &QPushButton::clicked, this, &LernsetWindow::nextCard);
+    connect(m_flipButton, &QPushButton::clicked, this, &LernsetWindow::flipCard);
+
+    nextCard();  // Show first card
 }
 
-MainWindow::~MainWindow() = default;
+void LernsetWindow::nextCard()
+{
+    m_currentIndex = (m_currentIndex + 1) % m_fronts.size();
+    m_isFront = true;
+    m_cardLabel->setText(m_fronts[m_currentIndex]);
+}
+
+void LernsetWindow::prevCard()
+{
+    m_currentIndex = (m_currentIndex - 1 + m_fronts.size()) % m_fronts.size();
+    m_isFront = true;
+    m_cardLabel->setText(m_fronts[m_currentIndex]);
+}
+
+void LernsetWindow::flipCard()
+{
+    if (m_isFront) {
+        m_cardLabel->setText(m_backs[m_currentIndex]);
+        m_flipButton->setText("Unflip");
+    } else {
+        m_cardLabel->setText(m_fronts[m_currentIndex]);
+        m_flipButton->setText("Flip");
+    }
+    m_isFront = !m_isFront;
+}
+

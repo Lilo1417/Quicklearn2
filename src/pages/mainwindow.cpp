@@ -16,6 +16,7 @@ MainWindow::MainWindow(QWidget *parent)
     // Set up central widget and layout
     m_centralWidget->setLayout(m_layout);
     setCentralWidget(m_centralWidget);
+    connect(m_button, &QPushButton::clicked, this, &MainWindow::onButtonClicked);
 
     // Configure window
     setWindowTitle("My Qt App");
@@ -25,9 +26,11 @@ MainWindow::MainWindow(QWidget *parent)
     m_layout->addWidget(m_button);
 }
 void MainWindow::onButtonClicked() {
-    if(!m_lernsetwindow) {
-        m_lernsetwindow = std::make_unique<lernsetwindow>();
+    if (!m_lernsetwindow) {
+        m_lernsetwindow = std::make_unique<LernsetWindow>(m_centralWidget);
+        m_layout->addWidget(m_lernsetwindow.get());
     }
+    m_lernsetwindow->show();  // Or raise() if already added
 }
 
 MainWindow::~MainWindow() = default;

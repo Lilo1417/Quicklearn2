@@ -12,6 +12,8 @@ add_executable(quicklearn
     main.cpp
     pages/mainwindow.cpp
     pages/mainwindow.h
+    pages/lernsetwindow.cpp
+    pages/lernsetwindow.h
 )
 
 target_link_libraries(quicklearn
